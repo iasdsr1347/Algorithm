@@ -7,5 +7,11 @@
 
 import Foundation
 
-print("Hello, World!")
-
+struct Q1000{
+    static func main(){
+        if let input = readLine() {
+            print(input.split(separator: " ").map { Int($0)! }.reduce(0, { $0+$1 }))
+        }
+    }
+}
+Q1000.main()
